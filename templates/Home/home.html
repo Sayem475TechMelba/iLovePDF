@@ -4,6 +4,11 @@
 {% block homeactive  %}active{% endblock homeactive  %}
 
 {% block css %}
+<style>
+    a:hover{
+        text-decoration:none;
+    }
+</style>
 {% endblock css %}
 
 
@@ -21,12 +26,14 @@
     <div class="container-fluid pt-5 pl-5 pr-5 my">
             <div class="row pb-3">
                 <div class="col-lg-2 col-md-6 p-4 my-row">
-                    <div class="d-flex  mb-2 p-2">
-                        <i class="fa fa-2x fa-plane text-danger pr-0"></i>
+                        <a href="/merge_pdf">
+                            <div class="d-flex  mb-2 p-2">
+                                <i class="fa fa-2x fa-plane text-danger pr-0"></i>
+                            </div>
+                            <h5>Merge PDF</h5>
+                            <small>Diam amet eos at no eos sit lorem, amet rebum ipsum Diam amet eos at no eos sit lorem, amet rebum ipsum</small>
+                        </a>
                     </div>
-                    <h5>Merge PDF</h5>
-                    <small>Diam amet eos at no eos sit lorem, amet rebum ipsum Diam amet eos at no eos sit lorem, amet rebum ipsum</small>
-                </div>
                 <div class="col-lg-2 col-md-6  p-4  my-row">
                     <div class="d-flex mb-2 p-2">
                         <i class="fa fa-2x fa-ship text-dark pr-0"></i>
