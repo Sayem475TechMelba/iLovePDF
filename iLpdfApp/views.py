@@ -7,3 +7,6 @@ def home(request):
 
 def mergepdf(request):
     return render(request,'PdfConvert/merge_pdf.html')
+
+def devices(request):
+    return render(request,'Devices/desktop.html')

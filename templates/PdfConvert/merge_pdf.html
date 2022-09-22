@@ -4,33 +4,37 @@
 {% block homeactive  %}active{% endblock homeactive  %}
 
 {% block css %}
+<style>
+    button{
+        padding:10px;
+        font-size:35px;
+    }
+</style>
 {% endblock css %}
 
 
 {% block body %}
 <!-- Home info Start -->
-<div class="container-fluid mt-5 p-5" style="background:#f2f3f8;">
+<div class="container-fluid mt-3 p-5" style="background:#f3f0ec;">
     <div class="container mt-5">
         <div class="text-center pb-2">
-            <p class="mb-0" style="font-size:30px;color:black;">The PDF software trusted by millions of users</p>
-            <p class="mb-4" style="font-size:20px;">iLovePDF is your number 1 web app for editing PDF with ease. Enjoy all the tools you need to work efficiently with your digital documents while keeping your data safe and secure</p>
+            <!-- <p class="mb-0" style="font-size:50px;color:black;">Merge PDF files </p> -->
+            <h1 class="mb-0">Merge PDF files </h1>
+            <p class="mb-4" style="font-size:20px;">Combine PDFs in the order you want with the easiest PDF merger available.</p>
         </div>
 
         <div class="row pb-3 mt-4">
-            <div class="col-lg-4 col-md-4 text-center mb-5">
-                <div class="d-flex align-items-center justify-content-center mb-4">
-                    <i class="fa fa-2x fa-plane text-dark pr-0"></i>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 text-center mb-5">
-                <div class="d-flex align-items-center justify-content-center  mb-4">
-                    <i class="fa fa-2x fa-ship text-dark pr-0"></i>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 text-center mb-5">
-                <div class="d-flex align-items-center justify-content-center mb-4 ">
-                    <i class="fa fa-2x fa-truck text-dark pr-0"></i>
-                </div>
+            <div class="col-lg-12 col-md-12 text-center mb-5">
+                <input type="file" id="myFileInput" class="d-none" />
+                <button class="btn btn-primary mb-3"
+                    style=" border-radius:5px; 
+                        padding:10;
+                        font-size:30px;"
+                    onclick="document.getElementById('myFileInput').click()"
+                >
+                Select PDF Files
+            </button><br>
+            <small> or drop PDFs here.</small>
             </div>
         </div>
     </div>
